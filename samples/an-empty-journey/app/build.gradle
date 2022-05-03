@@ -7,7 +7,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "ninja.luke.mobi.samples.emptyjourney"
+        applicationId "ninja.luke.mobi.journey2.samples.emptyjourney"
         minSdk 22
         targetSdk 32
         versionCode 1

@@ -1,4 +1,4 @@
-package ninja.luke.mobi.samples.emptyjourney
+package ninja.luke.mobi.journey2.samples.emptyjourney
 
 import org.junit.Test
 

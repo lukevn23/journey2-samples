@@ -1,4 +1,4 @@
-package ninja.luke.mobi.samples.emptyjourney
+package ninja.luke.mobi.journey2.samples.emptyjourney
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("ninja.luke.mobi.samples.emptyjourney", appContext.packageName)
+        assertEquals("ninja.luke.mobi.journey2.samples.emptyjourney", appContext.packageName)
     }
 }
