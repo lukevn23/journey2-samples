@@ -25,7 +25,7 @@ The support for hilt is on the queue\
 The support for full clean architecture application is on the queue
 
 ## journey2 versions 2.1
-implementation 'ninja.luke.mobile:journey2:2.1.6'\
+implementation 'ninja.luke.mobi:journey2:2.1.6'\
 \
 //important: only support koin 2.1.6, using higher koin will lead to crash\
 implementation 'io.insert-koin:koin-core:2.1.6'\
