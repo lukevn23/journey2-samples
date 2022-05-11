@@ -38,8 +38,8 @@ The support for full clean architecture application is on the queue
 Keep the way you create a fragment
 ```
 class Single1 : J2SingleFragment<J2SingleRoute>() {
-    override fun onCreateView(inflater: LayoutInflater,container: ViewGroup?,savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.app_screen_single1, container, false)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        return inflater.inflate(R.layout.fragment_single1, container, false)
     }
 }
 ```
