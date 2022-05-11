@@ -35,7 +35,7 @@ The support for full clean architecture application is on the queue
 
 
 ## Easy to start
-Keep the way you create a fragment\
+Keep the way you create a fragment
 ```
 class Single1 : J2SingleFragment<J2SingleRoute>() {
     override fun onCreateView(inflater: LayoutInflater,container: ViewGroup?,savedInstanceState: Bundle?): View? {
@@ -44,7 +44,7 @@ class Single1 : J2SingleFragment<J2SingleRoute>() {
 }
 ```
 \
-Simplify the way you navigate\
+Simplify the way you navigate
 ```
 interface Single2Route : J2SingleRoute {
     fun onSingle2ButtonClick()
