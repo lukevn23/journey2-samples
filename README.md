@@ -35,13 +35,25 @@ The support for full clean architecture application is on the queue
 
 
 ## Easy to start
-for junior, with J2Single\
+Keep the way you create a fragment\
+```
+class Single1 : J2SingleFragment<J2SingleRoute>() {
+    override fun onCreateView(inflater: LayoutInflater,container: ViewGroup?,savedInstanceState: Bundle?): View? {
+        return inflater.inflate(R.layout.app_screen_single1, container, false)
+    }
+}
+```
 \
-practice 1 - just a layout\
-\
-practice 2 - add its' route\
-\
-practice 3 - viewmodel & injection 
+Simplify the way you navigate\
+```
+interface Single2Route : J2SingleRoute {
+    fun onSingle2ButtonClick()
+}
+//...
+v.findViewById<View>(R.id.click).setOnClickListener {
+    route?.onSingle2ButtonClick()
+}
+```
 
 ## Advanced challenges
 for senior, with J2Journey / J2Screen\
