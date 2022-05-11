@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        mavenLocal()
+        maven {
+            url = "https://lukeninja.jfrog.io/artifactory/default-maven-local"
+            credentials {
+                username = "public@luke.ninja"
+                password = "eM7s&xFs3XmBNHuy"
+            }
+        }
+    }
+}
+rootProject.name = "an-empty-project"
+include ':app'
