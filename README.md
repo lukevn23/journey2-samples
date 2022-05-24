@@ -8,14 +8,6 @@ Will include skeleton for: an isolated module, an app with dynamic feature\
 Will include demonstrations for some workarounds 
 
 # Journey2
-## Content layout
-Introduction\
-Easy to start\
-Advanced challenges\
-Parallel development\
-Technical keywords\
-Others
-
 ## Introduction
 Journey2 is a framework that utilize mvvm, navigation & koin to provide micro frontend, customer journeys, multi modules and parallel development architecture\
 \
