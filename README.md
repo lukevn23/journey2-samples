@@ -19,19 +19,8 @@ Others
 ## Introduction
 Journey2 is a framework that utilize mvvm, navigation & koin to provide micro frontend, customer journeys, multi modules and parallel development architecture\
 \
-Key concepts: j2route, j2sdk & j2"micro"\
-\
-The full source code of Journey2 is planned to keep in private repository until the end of May 2025 to avoid unwanted legal problems for the owner\
-You can get to use the library just by pulling it from mavenCentral. Also please use it at your own risk\
-While it's in private repository, it will be maintained by me (and some contributors). Feel free to ping me if there's any issues in the framework itself\
-\
-Ping me if you want to access the private repository\
-\
-Important: Journey2 currently support koin 2.1.6 ONLY\
-\
-The support for koin 3.1.6 is on the queue\
-The support for hilt is on the queue\
-The support for full clean architecture application is on the queue
+Key concepts: DO NOT implement any navigation, ONLY use it via an interface\
+Keywords: j2route, j2sdk & j2"micro"
 
 
 ## Easy to start
@@ -62,13 +51,10 @@ practice 1 - journey setup\
 \
 practice 2 - journey viewmodel vs screen viewmodel\
 \
-practice 3 - reuse-able journey\
-\
-practice 4 - mixing between screens & children journeys\
-\
-practice 5 - widgets & shared stuffs 
+practice 3 - reuse-able journey, mixed usage between screen/journey/widget
 
-## Parallel development
+
+## Cool stuff
 isolated journeys on different repositories, with self-testing solution, and a try on dynamic features\
 \
 practice 1 - isolated journey setup\
@@ -77,8 +63,24 @@ practice 2 - start your own journey only\
 \
 practice 3 - dynamic feature setup 
 
+
+## Disclaimer
+The full source code of Journey2 is planned to keep in private repository until the end of May 2025 to avoid unwanted legal problems for the owner\
+You can get to use the library just by pulling it from mavenCentral. Also please use it at your own risk\
+While it's in private repository, it will be maintained by me (and some contributors). Feel free to ping me if there's any issues in the framework itself\
+\
+Ping me if you want to access the private repository\
+\
+Important: Journey2 currently support koin 2.1.6 ONLY\
+\
+The support for koin 3.1.6 is on the queue\
+The support for hilt is on the queue\
+The support for full clean architecture application is on the queue
+
+
 ## Technical keywords
 Android, Java, Kotlin, MVVM, Navigation, Dependency injection, Koin, Live data, Coroutines, Parallel development, Isolated module, Multiple modules, Multiple repositories, Micro frontend, Customer journeys, Dynamic feature, 
+
 
 ## Others
 ### Journey2 versions 2.1
