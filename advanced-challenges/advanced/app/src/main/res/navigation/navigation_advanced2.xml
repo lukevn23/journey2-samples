@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_advanced2"
+    app:startDestination="@+id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="ninja.luke.mobi.journey2.advanced.advanced2.screen.home.HomeScreen"
+        tools:layout="@layout/advanced2_screen_home">
+        <action
+            android:id="@+id/action_home_to_onescreen"
+            app:destination="@id/onescreen" />
+        <action
+            android:id="@+id/action_home_to_multiscreen"
+            app:destination="@id/multiscreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onescreen"
+        android:name="ninja.luke.mobi.journey2.advanced.advanced2.screen.onescreenvm.OneScreenVMScreen"
+        tools:layout="@layout/advanced2_screen_one_screen" />
+
+    <fragment
+        android:id="@+id/multiscreen"
+        android:name="ninja.luke.mobi.journey2.advanced.advanced2.screen.multiscreenvm.MultiScreenVMScreen"
+        tools:layout="@layout/advanced2_screen_multi_screen" />
+
+</navigation>

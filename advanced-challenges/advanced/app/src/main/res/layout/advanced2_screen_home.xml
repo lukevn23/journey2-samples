@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Advanced2 Home Screen"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="A few practices for view models, e.g.\n\n
+ + Where to provide the view model (in the Sdk), and inject it (by injectScreenViewModel()..)\n\n
+ + A view model for a single screen only\n\n
+ + A view model which is shared data between screens\n\n
+ + A view model keeps it data"/>
+
+    <Button
+        android:id="@+id/vm1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:text="ViewModel single screen" />
+
+    <Button
+        android:id="@+id/vm2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:text="ViewModel shared between multiple screens in this journey" />
+
+    <Button
+        android:id="@+id/vm3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:text="ViewModel keeps it data" />
+
+</LinearLayout>

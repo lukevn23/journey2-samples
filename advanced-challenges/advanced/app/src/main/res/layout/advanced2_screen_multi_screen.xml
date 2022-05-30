@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="vm"
+            type="ninja.luke.mobi.journey2.advanced.advanced2.screen.multiscreenvm.MultiScreenViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Advanced2 ViewModel Shared Between Multiple Screens Of This Journey"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Click the button will increase the counter on VM and update it to the text below\n
+\nBecause the ViewModel in this example is scoped into this whole journey,
+\nNo matter how you travel around this journey, the startup counter value will be remembered
+\nBut it will return back to zero if you leave this journey, for example: goes back to the Advanced1 home screen" />
+
+        <TextView
+            android:id="@+id/counter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:text="@{vm.counterLive}"
+            tools:text="0" />
+
+        <Button
+            android:id="@+id/increase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:onClick="@{() -> vm.increaseCounter()}"
+            android:text="Increase the counter in ViewModel" />
+
+    </LinearLayout>
+</layout>

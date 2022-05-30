@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Advanced1 Intro Screen"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Have a look in this advanced1 setup, we have a few more concepts:\n
+        \n
+ + Screens - which is also a fragment, very similar to Singles\n
+     it is designed to belong to a journey ONLY,\n
+     it does not have it own SDK but shared with the whole journey it belong to\n
+     \n
+ + Navigator - which is ALWAYS stick with a journey,\n
+     to implement the route of journey's children (singles, screens, and even another child journey)\n
+     has a few function to navigate between fragments (for example: NextScreen, PopScreen)\n
+     \n
+ + Journeys - a simple fragment contains (most of the time) only the navigation inside,\n
+     follows the customer journey concept, it will manage a few 'screens' to achieve customer's need\n
+     using Android Navigation, you will list the journey screens on it, and define the action to navigate around\n
+     \n
+ + NOTE: journey has it own Route too, follow the basic concept of pluggable" />
+
+</LinearLayout>
