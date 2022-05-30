@@ -10,13 +10,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven {
-            url = "https://lukeninja.jfrog.io/artifactory/default-maven-local"
-            credentials {
-                username = "public@luke.ninja"
-                password = "eM7s&xFs3XmBNHuy"
-            }
-        }
+        mavenLocal()
     }
 }
 rootProject.name = "easy-to-start"
