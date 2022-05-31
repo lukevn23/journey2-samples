@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_input3steps"
+    app:startDestination="@+id/input1">
+
+    <fragment
+        android:id="@+id/input1"
+        android:name="ninja.luke.mobi.journey2.advanced.input3steps.screen.input1.Input1Screen"
+        tools:layout="@layout/input3steps_screen_input1" >
+        <action
+            android:id="@+id/action_input1_to_input2"
+            app:destination="@id/input2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/input2"
+        android:name="ninja.luke.mobi.journey2.advanced.input3steps.screen.input2.Input2Screen"
+        tools:layout="@layout/input3steps_screen_input2" >
+        <action
+            android:id="@+id/action_input2_to_input3"
+            app:destination="@id/input3" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/input3"
+        android:name="ninja.luke.mobi.journey2.advanced.input3steps.screen.input3.Input3Screen"
+        tools:layout="@layout/input3steps_screen_input3" />
+
+
+</navigation>

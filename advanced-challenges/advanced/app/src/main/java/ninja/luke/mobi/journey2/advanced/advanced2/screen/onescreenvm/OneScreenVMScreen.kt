@@ -15,6 +15,7 @@ class OneScreenVMScreen : J2ScreenFragmentBinding<Advanced2ScreenOneScreenBindin
 
     override fun afterOnViewCreated() {
         super.afterOnViewCreated()
+        viewBinding.lifecycleOwner = viewLifecycleOwner
         viewBinding.vm = vm
     }
 

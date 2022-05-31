@@ -19,8 +19,7 @@ class HomeScreen : J2ScreenFragment<HomeRoute>(
             route?.onHomeGoAdvanced2()
         }
         view.findViewById<View>(R.id.advanced3).setOnClickListener {
-            //route?.onHomeGoAdvanced2()
-            Toast.makeText(requireContext(), "Not implement yet", Toast.LENGTH_SHORT).show()
+            route?.onHomeGoAdvanced3()
         }
 
     }

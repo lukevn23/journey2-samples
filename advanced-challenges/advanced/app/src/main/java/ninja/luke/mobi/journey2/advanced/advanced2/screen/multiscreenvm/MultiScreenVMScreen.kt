@@ -15,6 +15,7 @@ class MultiScreenVMScreen : J2ScreenFragmentBinding<Advanced2ScreenMultiScreenBi
 
     override fun afterOnViewCreated() {
         super.afterOnViewCreated()
+        viewBinding.lifecycleOwner = viewLifecycleOwner
         viewBinding.vm = vm
     }
 
